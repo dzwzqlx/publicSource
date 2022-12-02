@@ -10,7 +10,7 @@ lx288.b = () => {
 
 // ✳️✳️✳️✳️✳️ 执行系统指令，可以用字符串，也可以用数组，也可以用多行字符串
 // 需要：const { exec } = require('child_process')
-lx288.nodeExec = (exec, a)=> { // 测试方式：nodeExec(['dir', 'echo fdfdfadsfd'])
+lx288.nodeExec = (a)=> { // 测试方式：nodeExec(['dir', 'echo fdfdfadsfd'])
   // strExec('chcp 65001')
   if ('string' == typeof (a)) {
     if (!a.includes('\n')) {
